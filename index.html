@@ -1,0 +1,212 @@
+<!-- Assignment #1:  Create your own portfolio using HTML only. The website should contain a (dumb - non functional) form where people can reach out to you and ask you questions.
+Include lists, paragraphs, images, etc.
+Include a form with dropdown, inputs, text area, etc (no linking)
+Your page should include a link to an online website (i.e: google, youtube, etc.).
+Please include meaningful content and no "Lorem Ipsum"
+Due: Tomorrow, August 30th, at 10:00 AM. Deliverable: Keep it with you, will let you know how to submit in tomorrow's lectures.
+Prove yourself from Day1, @channel (edited)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Ammash</title>
+  </head>
+
+  <body>
+    <section id="myPortfolio">
+      <u><h1 align="center">Welcome to Mohammad Ammash Portfolio</h1></u>
+      
+      <div id="aboutMe">
+        <h2>ABOUT ME</h2>
+        <table>
+          <tr>
+            <td>
+              <img
+                height="500"
+                width="800"
+                src="images/aboutme.avif"
+                alt="not found"
+              />
+            </td>
+
+            <td>
+              <p align="center">
+                a 22 years old enthusiastic, dedicated, and ambitious learner. I
+                have a bachelor degree in Management Informational System(MIS),
+                worked lately on my technical programming skills on udemy and by
+                completing 'Foundations of Computer Science course' with 'SE
+                Factory' foundation. Currently focusing and looking to start my
+                journey as a Full-Stack Web Developer.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- HTML content including unorderedList -->
+      <div id="education">
+        <h2>EDUCATION</h2>
+        <table>
+          <tr>
+            <td>
+              <img
+                height="500"
+                width="800"
+                src="images/education.avif"
+                alt="not found"
+              />
+            </td>
+            <td>
+              <ul>
+                <li>
+                  Foundation of Computer Science Course(From 1-8-2022 / Until:
+                  26-8-2022)
+                </li>
+                <li>
+                  Javascript Algorithms and Data Structures - UDEMY (From
+                  1-3-2022 / Until: 1-7-2022)
+                </li>
+                <li>
+                  Bachelor Degree in Management Informational System(From
+                  1-9-2018 / Until: 1-9-2021)
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- HTML content using Table -->
+      <div id="workExp">
+        <h2>WORK EXPERIENCE</h2>
+        <table>
+          <tr>
+            <td>
+              <img width="800" height="500" src="images/workExperience.avif" />
+            </td>
+            <td align="center"> 
+              <table cellspacing="3"  border="1">
+                <tr>
+                  <th>Job Title</th>
+                  <th>Company Name</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                </tr>
+                <tr>
+                  <td>Admission Representative</td>
+                  <td>AlRasoul AlAazam Hospital</td>
+                  <td>3/2022</td>
+                  <td>8/2022</td>
+                </tr>
+                <tr>
+                  <td>Cashier and call center agent</td>
+                  <td>Tasty Bees</td>
+                  <td>3/2020</td>
+                  <td>12/2021</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- HTML content using orderedList -->
+      <div id="skills">
+        <h2>SKILLS</h2>
+        <table>
+          <tr>
+            <td>
+              <img width="800" height="500" src="images/skills.jpg" />
+            </td>
+            <td>
+              <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+                <li>NodeJS</li>
+                <li>SQL</li>
+                <li>Mongoose</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <br />
+      <hr />
+    </section>
+
+
+    <!-- QuestionSection: form practice of input, dropdowns, textarea(labels, placeholder...) -->
+    <section id="questionsSection">
+      <h1>QUESTIONS</h1>
+      <form>
+        <h2><u>Add a Question:</u></h2>
+        <div>
+          <label for="username">Username:</label>
+          <input id="username" placeholder="Please enter a valid username" />
+        </div>
+        <br />
+        <div>
+          <label for="question">Question Topic:</label>
+          <select id="question">
+            <option name="question" value="question1">About Mohammad</option>
+            <option name="question" value="question2">Education</option>
+            <option name="question" value="question3">Work Experience</option>
+            <option name="question" value="question4">Skills</option>
+            <option name="question" value="question5">Others</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="reviewText">The Question:</label>
+          <br />
+          <textarea
+            rows="5"
+            cols="80"
+            id="reviewText"
+            placeholder="Please leave your question here"
+          ></textarea>
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <br />
+      <hr />
+      <br />
+    </section>
+
+
+    <!-- Footer Section including HTML practice using Links & images -->
+    <section id="footer" align="center">
+      CopyRight &copy; 2022 Mohammad Ammash
+      <br />
+      <br />
+      <!-- Link to Portfolio's owner Instagram Account -->
+      <a href="https://www.instagram.com/mhmdammash_/"
+        ><img width="30" height="30" src="images/instagram.png"
+      /></a>
+      &emsp;
+
+      <!-- Link to send gmail/contact the Portfolio owner-->
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mohammadammash31@gmail.com"
+        target="_blank"
+        ><img width="30" height="30" src="images/gmail.png"
+      /></a>
+      &emsp;
+
+      <!-- Link to search in google for any matches for portfolio's owner fullName -->
+      <a
+        href="https://www.google.com/search?q=mohammad+ammash&sxsrf=ALiCzsZxE8LSf3X25rD54Ac5mMPcSdM5fA%3A1661798699733&ei=KwkNY7S1LJTzsAfxwqKgBQ&ved=0ahUKEwj09r3J2uz5AhWUOewKHXGhCFQQ4dUDCA4&uact=5&oq=mohammad+ammash&gs_lcp=Cgdnd3Mtd2l6EANKBAhBGABKBAhGGABQNVj2B2C_CWgAcAF4AIABAIgBAJIBAJgBAKABAcABAQ&sclient=gws-wiz"
+        ><img width="30" height="30" src="images/google.png"
+      /></a>
+      &emsp;
+    </section>
+  </body>
+</html>
